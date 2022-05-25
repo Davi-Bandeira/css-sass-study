@@ -35,6 +35,14 @@ p {
   @include type-1(16);
 }
 
+@function grid($colunas, $total: 12) {  //Função para calcular o tamanho das grids
+  @return round(($colunas / $total) * 100%);
+}
+
+@function pixelsToEm($pixels, $contexto: 16) {   //Função que converte pixels em EM
+  @return ($pixels / $contexto) * 1em;
+}
+
 @mixin title-large {
   font-size: 4em;
   font-weight: bold;
@@ -132,6 +140,7 @@ ul {
   li {
     display: inline-block;
     list-style: none;
+    font-size: pixelsToEm(36);
 
     a {
       display: block;
@@ -139,9 +148,11 @@ ul {
       text-decoration: none;
       background: blue;
       color: white;
+      font-size: pixelsToEm(16, 36);
 
       &:hover {
-        background: pink;
+        background: darken(blue, 20%); //Função que escurece a cor - calcula a porcentagem automaticamente
+        //background: transparentize(blue, .5); Função que deixa mais transparente a cor
       }
     }
   }

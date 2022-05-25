@@ -75,14 +75,16 @@ ul {
   text-align: center; }
   ul li {
     display: inline-block;
-    list-style: none; }
+    list-style: none;
+    font-size: 2.25em; }
     ul li a {
       display: block;
       padding: 20px;
       text-decoration: none;
       background: blue;
-      color: white; }
+      color: white;
+      font-size: 0.4444444444em; }
       ul li a:hover {
-        background: pink; }
+        background: #000099; }
 
 /*# sourceMappingURL=style.css.map */
