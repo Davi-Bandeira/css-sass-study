@@ -14,6 +14,27 @@ div {
   }
 }
 
+@mixin type-1($size) {
+  font-family: monospace;
+
+  @if $size == 16 {
+    font-size: 1em;
+    font-weight: normal;
+  }
+  @else if $size == 18 {
+    font-size: 1.25em;
+    font-weight: normal;
+  }
+  @else if $size == 24 {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+}
+
+p {
+  @include type-1(16);
+}
+
 @mixin title-large {
   font-size: 4em;
   font-weight: bold;
@@ -100,7 +121,7 @@ section {
     font-family: $font-primaria;
 
     &:hover {
-      background: pink;
+      background: lighten(blue, 20%); //Função que clareia a cor - calcula a porcentagem automaticamentes
     }
   }
 }

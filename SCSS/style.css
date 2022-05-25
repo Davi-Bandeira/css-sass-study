@@ -15,6 +15,11 @@ div {
     color: pink;
     background: blue; }
 
+p {
+  font-family: monospace;
+  font-size: 1em;
+  font-weight: normal; }
+
 section {
   max-width: 600px;
   margin: 0 auto;
@@ -64,7 +69,7 @@ section {
     text-transform: uppercase;
     font-family: monospace; }
     .modal a:hover {
-      background: pink; }
+      background: #6666ff; }
 
 ul {
   text-align: center; }
