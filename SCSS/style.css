@@ -17,31 +17,54 @@ div {
 
 section {
   max-width: 600px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
 
-.modal h1 {
-  color: blue;
-  font-family: monospace;
-  margin-bottom: 20px; }
-.modal p {
-  font-size: 1.2em;
-  line-height: 1.4;
-  max-width: 400px;
-  font-family: monospace;
-  font-style: italic; }
-.modal a {
-  display: block;
-  max-width: 120px;
-  padding: 10px;
-  border-radius: 4px;
-  text-align: center;
-  background: blue;
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: monospace; }
-  .modal a:hover {
-    background: pink; }
+.modal {
+  box-shadow: 10px 10px 0 0 rgba(0, 0, 0, 0.5), 15px 15px 0 0 rgba(0, 0, 0, 0.5), 20px 20px 0 0 rgba(0, 0, 0, 0.5);
+  -moz-box-sizing: 10px 10px 0 0 rgba(0, 0, 0, 0.5), 15px 15px 0 0 rgba(0, 0, 0, 0.5), 20px 20px 0 0 rgba(0, 0, 0, 0.5);
+  -webkit-box-sizing: 10px 10px 0 0 rgba(0, 0, 0, 0.5), 15px 15px 0 0 rgba(0, 0, 0, 0.5), 20px 20px 0 0 rgba(0, 0, 0, 0.5); }
+  .modal h1 {
+    color: blue;
+    font-family: monospace;
+    margin-bottom: 20px;
+    font-size: 4em;
+    font-weight: bold;
+    font-family: monospace; }
+    .modal h1::after {
+      content: '';
+      display: block;
+      width: 400px;
+      height: 4px;
+      background: blue; }
+    @media (max-width: 600px) {
+      .modal h1 {
+        color: pink;
+        font-size: 2em; } }
+  .modal p {
+    font-size: 1.2em;
+    line-height: 1.4;
+    max-width: 400px;
+    font-family: monospace;
+    font-style: italic; }
+    @media (max-width: 600px) {
+      .modal p {
+        font-size: .6em; } }
+  .modal a {
+    display: block;
+    max-width: 120px;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    background: blue;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: monospace; }
+    .modal a:hover {
+      background: pink; }
 
 ul {
   text-align: center; }
