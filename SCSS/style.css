@@ -15,4 +15,49 @@ div {
     color: pink;
     background: blue; }
 
+p {
+  font-family: monospace;
+  font-size: 1em;
+  font-weight: normal; }
+
+section {
+  max-width: 600px;
+  margin: 0 auto; }
+
+.modal h1 {
+  color: blue;
+  font-family: monospace;
+  margin-bottom: 20px; }
+.modal p {
+  font-size: 1.2em;
+  line-height: 1.4;
+  max-width: 400px;
+  font-family: monospace;
+  font-style: italic; }
+.modal a {
+  display: block;
+  max-width: 120px;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  background: blue;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: monospace; }
+
+ul {
+  text-align: center; }
+  ul li {
+    display: inline-block;
+    list-style: none;
+    font-size: 16px; }
+    ul li a {
+      display: block;
+      padding: 20px;
+      text-decoration: none;
+      background: blue;
+      color: white;
+      font-size: 16px; }
+
 /*# sourceMappingURL=style.css.map */
