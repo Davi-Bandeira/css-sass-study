@@ -35,6 +35,14 @@ p {
   @include type-1(16);
 }
 
+$lista: facebook twitter snapchat instagram;
+
+@each $item in $lista {
+  .rede-#{$item} {
+    background: url('../img/#{$item}.png');
+  }
+}
+
 @function grid($colunas, $total: 12) {  //Função para calcular o tamanho das grids
   @return round(($colunas / $total) * 100%);
 }
