@@ -15,11 +15,6 @@ div {
     color: pink;
     background: blue; }
 
-p {
-  font-family: monospace;
-  font-size: 1em;
-  font-weight: normal; }
-
 section {
   max-width: 600px;
   margin: 0 auto; }
@@ -45,19 +40,21 @@ section {
   text-decoration: none;
   text-transform: uppercase;
   font-family: monospace; }
+  .modal a:hover {
+    background: pink; }
 
 ul {
   text-align: center; }
   ul li {
     display: inline-block;
-    list-style: none;
-    font-size: 16px; }
+    list-style: none; }
     ul li a {
       display: block;
       padding: 20px;
       text-decoration: none;
       background: blue;
-      color: white;
-      font-size: 16px; }
+      color: white; }
+      ul li a:hover {
+        background: pink; }
 
 /*# sourceMappingURL=style.css.map */

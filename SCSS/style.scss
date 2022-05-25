@@ -14,27 +14,6 @@ div {
   }
 }
 
-@mixin type-1($size) {
-  font-family: monospace;
-
-  @if $size == 16 {
-    font-size: 1em;
-    font-weight: normal;
-  }
-  @else if $size == 18 {
-    font-size: 1.25em;
-    font-weight: normal;
-  }
-  @else if $size == 24 {
-    font-size: 1.5em;
-    font-weight: bold;
-  }
-}
-
-p {
-  @include type-1(16);
-}
-
 $cor-primaria: blue;
 $font-primaria: monospace;
 $gutter: 20px;
@@ -71,6 +50,10 @@ section {
     text-decoration: none;
     text-transform: uppercase;
     font-family: $font-primaria;
+
+    &:hover {
+      background: pink;
+    }
   }
 }
 
@@ -80,7 +63,6 @@ ul {
   li {
     display: inline-block;
     list-style: none;
-    font-size: 16px;
 
     a {
       display: block;
@@ -88,7 +70,10 @@ ul {
       text-decoration: none;
       background: blue;
       color: white;
-      font-size: 16px;
+
+      &:hover {
+        background: pink;
+      }
     }
   }
 }
