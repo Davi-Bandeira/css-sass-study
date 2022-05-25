@@ -1,19 +1,6 @@
 p {
   color: blue;
-  background: gray; }
-
-a {
-  display: block;
-  width: 200px;
-  height: 40px; }
-
-div {
-  background: #999;
-  height: 200px;
-  width: 200px; }
-  div a {
-    color: pink;
-    background: blue; }
+  background: orange; }
 
 p {
   font-family: monospace;
@@ -46,7 +33,7 @@ section {
   .modal h1 {
     color: blue;
     font-family: monospace;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-size: 4em;
     font-weight: bold;
     font-family: monospace; }
@@ -55,10 +42,10 @@ section {
       display: block;
       width: 400px;
       height: 4px;
-      background: blue; }
+      background: yellow; }
     @media (max-width: 600px) {
       .modal h1 {
-        color: pink;
+        color: #84E;
         font-size: 2em; } }
   .modal p {
     font-size: 1.2em;
@@ -79,7 +66,7 @@ section {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: monospace; }
+    font-family: blue; }
     .modal a:hover {
       background: #6666ff; }
 

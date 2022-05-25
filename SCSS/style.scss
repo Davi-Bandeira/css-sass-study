@@ -1,18 +1,4 @@
 @import "colors";
-@import "buttons";
-
-$preto: #999;
-
-div {
-  background: $preto;
-  height: 200px;
-  width: 200px;
-
-  a {
-    color: pink;
-    background: blue;
-  }
-}
 
 @mixin type-1($size) {
   font-family: monospace;
@@ -85,9 +71,9 @@ $lista: facebook twitter snapchat instagram;
   }
 }
 
-$cor-primaria: blue;
-$font-primaria: monospace;
-$gutter: 20px;
+$primary-color: blue;
+$primary-font: monospace;
+$gutter: 30px;
 
 section {
   max-width: 600px;
@@ -102,13 +88,13 @@ section {
           20px 20px 0 0 rgba(0,0,0,.5));
 
   h1 {
-    color: $cor-primaria;
-    font-family: $font-primaria;
+    color: $primary-color;
+    font-family: $primary-font;
     margin-bottom: $gutter;
     @include title-large;
-    @include separador(blue, 400px);
+    @include separador(yellow, 400px);
     @include mobile {
-      color: pink;
+      color: #84E;
       font-size: 2em;
     }
   }
@@ -117,7 +103,7 @@ section {
     font-size: 1.2em;
     line-height: 1.4;
     max-width: 400px;
-    font-family: $font-primaria;
+    font-family: $primary-font;
     font-style: italic;
     @include mobile {
       font-size: .6em;
@@ -130,11 +116,11 @@ section {
     padding: 10px;
     border-radius: 4px;
     text-align: center;
-    background: $cor-primaria;
+    background: $primary-color;
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: $font-primaria;
+    font-family: $primary-color;
 
     &:hover {
       background: lighten(blue, 20%); //Função que clareia a cor - calcula a porcentagem automaticamentes
